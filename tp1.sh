@@ -90,7 +90,7 @@ while [ $i -eq 0 ]; do
             echo "saliendo..."
             # se verifica que con el -n  que el id del scrip consolidar.sh exista y si este esta en proceso entra al if
             if [ -n "$PID_CONSOLIDAR" ]; then
-            # el comando kill mata el proceso en segundo plano consolidar.sh al momento de salir para que no se siga ejecutando de forma inecesaria
+            # el comando kill mata el proceso en segundo plano consolidar.sh al momento de salir para que no se siga ejecutando de forma inecesaria.
                 kill "$PID_CONSOLIDAR" 2>/dev/null
                 echo "Procesos detenidos."
             fi  
