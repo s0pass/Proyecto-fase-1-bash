@@ -72,7 +72,9 @@ do
         ;;
       
       7)    
-        break       # finaliza
+        pkill -f "consolidar.sh"
+        break     # finaliza
+        
         ;;
      
       *)
