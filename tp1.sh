@@ -28,11 +28,13 @@ do
        mkdir -p EPNro1
        cd EPNro1
        mkdir -p entrada salida procesado
+       cp ~/consolidar.sh ~/EPNro1
        echo "Entorno creado correctamente"
        ;;
     
     2) cd ~/EPNro1          #se ejecuta consolidar.sh en segundo plano
        bash consolidar.sh &
+       echo "ejecucion del proceso en segundo plano activado."
        ;;
     
     3) 
